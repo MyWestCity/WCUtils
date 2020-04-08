@@ -198,12 +198,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSAttributedString *)attributedStringWithSubString:(NSString *)string dictionary:(NSDictionary *)dictionary;
 
 #pragma mark - 进制转换
+
+
 /**
  *  字符串转16进制
  *  @parameter   string:要转换的字符串
  *  @return     转换之后的16进制字符串
  */
 + (NSString *)convertStringToHexString:(NSString *)string;
+- (NSString *)hexString;
 
 /**
  *  16进制转字符串
@@ -211,6 +214,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return     转换之后的字符串
  */
 + (NSString *)convertHexStrToString:(NSString *)hexString;
+- (NSString *)hexStrToString;
 
 /**
  *  16进制字符串转NSData
@@ -218,6 +222,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return     转换之后的NSData数据
  */
 + (NSData *)convertHexStrToData:(NSString *)hexString;
+- (NSData *)hexStrToData;
 
 /**
  *  NSData转16进制字符串
@@ -246,6 +251,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return     转换之后的十进制字符串
  */
 + (NSString *)convertHexToDecimalString:(NSString *)hexString;
+- (NSString *)hexStrToDecimalString;
 
 /**
  *  二进制转十六进制
@@ -253,6 +259,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return     转换之后的16进制字符串
  */
 + (NSString *)convertBinaryToHexString:(NSString *)binaryString;
+- (NSString *)binaryStrToHexString;
 
 /**
  *  十六进制转二进制
@@ -260,7 +267,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return     转换之后的二进制字符串
  */
 + (NSString *)convertHexToBinaryString:(NSString *)hexString;
-
+- (NSString *)hexStrToBinaryString;
 
 #pragma mark - label自适应高度
 /**

@@ -16,6 +16,7 @@
 #import "NSBundle+Category.h"
 #import "NSDate+Category.h"
 #import "NSObject+Category.h"
+#import "NSObject+Encrypt.h"
 #import "NSInvocation+Category.h"
 
 #endif /* WCCategory_h */

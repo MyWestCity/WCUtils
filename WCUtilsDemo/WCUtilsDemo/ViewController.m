@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "WCWidget.h"
+#import "WCCategory.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"%@", [@"123456" md5]);
+    
 }
 
 

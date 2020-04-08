@@ -495,6 +495,10 @@
     return hexString;
 }
 
+- (NSString *)hexString {
+    return [NSString convertStringToHexString:self];
+}
+
 /**
  *  16进制转字符串
  *  @paramter   hexString:要转换的16进制字符串
@@ -530,6 +534,10 @@
     return string;
 }
 
+- (NSString *)hexStrToString {
+    return [NSString convertHexStrToString:self];
+}
+
 /**
  *  16进制字符串转NSData
  *  @paramter   hexString:要转换的16进制字符串
@@ -563,6 +571,10 @@
     }
     
     return hexData;
+}
+
+- (NSData *)hexStrToData {
+    return [NSString convertHexStrToData:self];
 }
 
 /**
@@ -668,6 +680,10 @@
     return [NSString stringWithFormat:@"%lu", strtoul([hexString UTF8String], 0, 16)];
 }
 
+- (NSString *)hexStrToDecimalString {
+    return [NSString convertHexToDecimalString:self];
+}
+
 /**
  *  二进制转十六进制
  *  @paramter   binaryString:要转换的二进制字符串
@@ -717,6 +733,10 @@
     return hexString;
 }
 
+- (NSString *)binaryStrToHexString {
+    return [NSString convertBinaryToHexString:self];
+}
+
 /**
  *  十六进制转二进制
  *  @paramter   hexString:要转换的16进制字符串
@@ -757,6 +777,9 @@
     return binaryString;
 }
 
+- (NSString *)hexStrToBinaryString {
+    return [NSString convertHexToBinaryString:self];
+}
 
 #pragma mark - label自适应高度
 /**
