@@ -63,6 +63,7 @@
         return;
     }
     
+    
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text];
     ;
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -72,5 +73,7 @@
     
     self.attributedText = attributedString;
 }
+
+
 
 @end

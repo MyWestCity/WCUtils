@@ -649,10 +649,8 @@
         }
     }
     
-    if (hexString.length < digit) {
-        for (int i = 0; i < digit - hexString.length; i++) {
-            hexString = [NSString stringWithFormat:@"0%@", hexString];
-        }
+    while (hexString.length < digit) {
+        hexString = [NSString stringWithFormat:@"0%@", hexString];
     }
     
     return hexString;
