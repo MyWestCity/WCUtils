@@ -88,7 +88,7 @@
     }
     
     if (placeHolderColor != nil) {
-        [textField setValue:placeHolderColor forKeyPath:@"_placeholderLabel.textColor"];
+        textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeHolder attributes:@{NSForegroundColorAttributeName: placeHolderColor}];
     }
     
     if (backgroundImageNamed != nil) {
@@ -171,7 +171,7 @@
     }
     
     if (placeHolderColor != nil) {
-        [textField setValue:placeHolderColor forKeyPath:@"_placeholderLabel.textColor"];
+        textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeHolder attributes:@{NSForegroundColorAttributeName: placeHolderColor}];
     }
     
     textField.backgroundColor = backgroundColor;
